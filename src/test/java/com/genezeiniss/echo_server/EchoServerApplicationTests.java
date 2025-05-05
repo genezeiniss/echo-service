@@ -9,5 +9,4 @@ class EchoServerApplicationTests {
 	@Test
 	void contextLoads() {
 	}
-
 }
