@@ -27,8 +27,8 @@ A lightweight Spring Boot API that echoes back JSON payloads.
 ### Installation
 1. Clone the repository:
 ```bash
-   git clone https://github.com/your-repo/echo-server.git
-   cd echo-server
+   git clone https://github.com/your-repo/echo-service.git
+   cd echo-service
 ```
 2. Build the project:
 ```bash
@@ -65,7 +65,7 @@ Any valid JSON payload
 ```
 
 ### Response: 
-Same as request payload
+Same as the request payload
 
 **Example:**
 
