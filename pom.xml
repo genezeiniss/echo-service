@@ -9,7 +9,7 @@
 		<relativePath/>
 	</parent>
 	<groupId>com.genezeiniss</groupId>
-	<artifactId>echo-server</artifactId>
+	<artifactId>echo-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>echo-server</name>
 	<description>A simple application that echoes back JSON payloads</description>

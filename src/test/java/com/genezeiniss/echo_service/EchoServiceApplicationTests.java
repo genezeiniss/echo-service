@@ -1,10 +1,10 @@
-package com.genezeiniss.echo_server;
+package com.genezeiniss.echo_service;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class EchoServerApplicationTests {
+class EchoServiceApplicationTests {
 
 	@Test
 	void contextLoads() {

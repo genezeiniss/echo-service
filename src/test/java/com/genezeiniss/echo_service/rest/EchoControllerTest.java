@@ -1,4 +1,4 @@
-package com.genezeiniss.echo_server.rest;
+package com.genezeiniss.echo_service.rest;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

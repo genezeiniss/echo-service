@@ -1,4 +1,4 @@
-package com.genezeiniss.echo_server.rest;
+package com.genezeiniss.echo_service.rest;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
