@@ -1,4 +1,4 @@
-# Echo-Server
+# Echo-Service
 
 A lightweight Spring Boot API that echoes back JSON payloads.
 
