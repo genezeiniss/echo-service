@@ -38,14 +38,23 @@ A lightweight Spring Boot API that echoes back JSON payloads.
 ## Usage
 ### Running the Application
 
-Start the server on default port `8080`:
+1. Make `echo.sh` script executable
 ```bash
-     mvn spring-boot:run
+    chmod +x echo.sh
 ```
-To run on a custom port (e.g., 3001):
+2. Create required directories:
 ```bash
-     mvn spring-boot:run -Dspring-boot.run.arguments=--server.port=3001
+    mkdir -p pids logs
 ```
+3. Command Reference:
+
+| Command         | Description                              | Example                   |
+|-----------------|------------------------------------------|---------------------------|
+| `start-cluster` | Starts 3 instances (ports 3001-3003)     | `./echo.sh start-cluster` |
+| `start`         | Starts single instance on specified port | `./echo.sh start 3004`    |
+| `stop`          | Stops instance on specified port         | `./echo.sh stop 3002`     |
+| `restart`       | Restarts instance on specified port      | `./echo.sh restart 3001`  |
+| `list`          | Shows all running instances              | `./echo.sh list`          |
 
 ---
 ## API Endpoint
