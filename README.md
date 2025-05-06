@@ -23,7 +23,7 @@ A lightweight Spring Boot API that echoes back JSON payloads.
 ### Installation
 1. Clone the repository:
 ```bash
-   git clone https://github.com/echo-service.git
+   git clone https://github.com/genezeiniss/echo-service.git
    cd echo-service
 ```
 2. Build the project:
