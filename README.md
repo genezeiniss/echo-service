@@ -3,22 +3,18 @@
 A lightweight Spring Boot API that echoes back JSON payloads.
 
 ---
-
 ## **Features**
 - Accepts `HTTP POST` requests with any JSON payload.
 - Returns the same JSON with a `201 CREATED` response.
 - Ready for horizontal scaling (run multiple instances on different ports).
 
 ---
-
 ## **Technologies**
 - **Java 21**
 - **Spring Boot 3.x**
 - **Maven** (dependency management)
-- Embedded **Tomcat** server
 
 ---
-
 ## **Setup**
 ### Prerequisites
 - Java 21 JDK
@@ -27,7 +23,7 @@ A lightweight Spring Boot API that echoes back JSON payloads.
 ### Installation
 1. Clone the repository:
 ```bash
-   git clone https://github.com/your-repo/echo-service.git
+   git clone https://github.com/echo-service.git
    cd echo-service
 ```
 2. Build the project:
@@ -37,7 +33,6 @@ A lightweight Spring Boot API that echoes back JSON payloads.
 --- 
 ## Usage
 ### Running the Application
-
 1. Make `echo.sh` script executable
 ```bash
     chmod +x echo.sh
