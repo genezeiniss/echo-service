@@ -31,6 +31,15 @@ stop_instance() {
   fi
 }
 
+stop_cluster() {
+  echo "Stopping all echo-service instances..."
+  for pid_file in "$BASE_DIR"/pids/echo-*.pid; do
+    [ -e "$pid_file" ] || continue
+    local port=$(basename "$pid_file" | cut -d'-' -f2 | cut -d'.' -f1)
+    stop_instance "$port"
+  done
+}
+
 list_instances() {
   echo "Active echo-service instances:"
   echo "------------------------------"
@@ -55,6 +64,10 @@ case "$1" in
     for port in {3001..3003}; do
       start_instance $port
     done
+    ;;
+
+  stop-cluster)
+    stop_cluster
     ;;
 
   start)
@@ -91,6 +104,7 @@ case "$1" in
     echo ""
     echo "Commands:"
     echo "  start-cluster         Start 3 instances (ports 3001-3003)"
+    echo "  stop-cluster          Stop all running instances"
     echo "  start <port>          Start single instance"
     echo "  stop <port>           Stop specific instance"
     echo "  restart <port>        Restart specific instance"

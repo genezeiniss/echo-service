@@ -46,6 +46,7 @@ A lightweight Spring Boot API that echoes back JSON payloads.
 | Command         | Description                              | Example                   |
 |-----------------|------------------------------------------|---------------------------|
 | `start-cluster` | Starts 3 instances (ports 3001-3003)     | `./echo.sh start-cluster` |
+| `stop-cluster`  | Stop all running instances               | `./echo.sh stop-cluster`  |
 | `start`         | Starts single instance on specified port | `./echo.sh start 3004`    |
 | `stop`          | Stops instance on specified port         | `./echo.sh stop 3002`     |
 | `restart`       | Restarts instance on specified port      | `./echo.sh restart 3001`  |
